@@ -33,7 +33,7 @@ with st.spinner("Cargando datos...."):
     google = GoogleSheet(credentials,document_name,sheet_name)
     contactos = google.get_all_values()
     df = pd.DataFrame(contactos)
-    data_frame = st.dataframe(df,use_container_width=True)
+    data_frame = st.dataframe(df,use_container_width=True,column_order=("nombre","email","fecha-nacimiento"),hide_index=True)
 
 #nuevo_usuario = st.button("Nuevo usuario")
 
