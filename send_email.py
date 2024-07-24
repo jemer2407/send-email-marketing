@@ -9,7 +9,7 @@ def send_email(email, subject, message):
     user = st.secrets["emails"]["smtp_user"]
     password = st.secrets["emails"]["smtp_password"]
 
-    sender_email = "Club del Café"
+    sender_email = "Salon de Masajes Cordoba"
 
     # configuracion del servidor
     msg = MIMEMultipart()

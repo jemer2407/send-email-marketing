@@ -16,7 +16,7 @@ def generate_uid():
 # VARIABLES
 # ---- credenciales, nombre del documento de hoja de calculo y nombre de la hoja ----
 credentials = st.secrets["google"]["credentials_google"]
-document_name = "bbdd-email-marketing"
+document_name = "bbdd-citas-masajes"
 sheet_name = "contactos"
 # ---------------------------------
 
